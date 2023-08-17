@@ -1,58 +1,46 @@
-@import url("styles/header.css");
- @import url("styles/banner.css");
-@import url(styles/carrossel.css);
+/* styles.css */
 
+/* ... (mesmo conteúdo anterior) ... */
 
-:root {
-    --cor-de-fundo: : #EBECEE;
-    --branco:  #FFFFFF;
-    --laranja: #FD8325;
-    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .nav-list {
+        display: none;
+    }
 
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+        margin-top: 10px;
+    }
 
+    .mobile-menu span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px auto;
+        transition: all 0.3s ease-in-out;
+    }
 
+    .hero-content {
+        text-align: center;
+    }
+
+    .cta-button {
+        margin-top: 1rem;
+    }
+
+    .portfolio-items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
 }
 
-
-body {
-    background-color: var(--cor-de-fundo);
-}
-
-
-.container__imagem {
-    padding: 1en;
-}
-.lista-menu {
-    display: nome;
-    position: absolute;
-    width: 60vw;
-}
-
-
-container__botao:checked ~ .lista-menu {
-    display: block;
-}
-
-
-.lista-menu__titulo, .lista-menu__iten {
-    padding: 1en;
-    background-color: var(--branco);
-}
-
-
-.lista-menu__iten {
-    color: var(--laranja);
-}
-.lista-menu__link {
-
-
-
-
-
-
-       text-transform: uppercase;
-}
-
-
-
+/* ... (mesmo conteúdo anterior) ... */
